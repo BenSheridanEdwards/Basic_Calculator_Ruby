@@ -7,13 +7,31 @@ class Calculator
 
     case operator
     when "+"
-      [sum] << first_number + second_number
+      [sum] << add(first_number, second_number)
     when "-"
-      [sum] << first_number - second_number
+      [sum] << subtract(first_number, second_number)
     when '/'
-      [sum] << first_number / second_number
+      [sum] << divide(first_number, second_number)
     when "*"
-      [sum] << first_number * second_number
+      [sum] << multiply(first_number, second_number)
     end
+  end
+
+  private
+
+  def add(first_number, second_number)
+    first_number + second_number
+  end
+
+  def subtract(first_number, second_number)
+    first_number - second_number
+  end
+
+  def divide(first_number, second_number)
+    first_number / second_number
+  end
+
+  def multiply(first_number, second_number)
+    first_number * second_number
   end
 end
