@@ -22,5 +22,11 @@ describe Calculator do
         expect(subject.evaluate("50 - 10")).to eq ["50 - 10", 40]
       end
     end
+
+    context "when the sum is division" do
+      it "takes in the um of 9 / 3 and returns the sum with the answer of 3" do
+        expect(subject.evaluate("9 / 3")).to eq ["9 / 3", 3]
+      end
+    end
   end
 end
