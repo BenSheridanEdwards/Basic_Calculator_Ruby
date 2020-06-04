@@ -24,12 +24,18 @@ describe Calculator do
     end
 
     context "when the sum is division" do
-      it "takes in the um of 9 / 3 and returns the sum with the answer of 3" do
+      it "takes in the sum of 9 / 3 and returns the sum with the answer of 3" do
         expect(subject.evaluate("9 / 3")).to eq ["9 / 3", 3]
       end
 
-      it "takes in the um of 90 / 3 and returns the sum with the answer of 30" do
+      it "takes in the sum of 90 / 3 and returns the sum with the answer of 30" do
         expect(subject.evaluate("90 / 3")).to eq ["90 / 3", 30]
+      end
+    end
+
+    context "when the sum is multiplation" do
+      it "takes in the sum of 5 * 5 and returns the sum with the answer 25" do
+        expect(subject.evaluate("5 * 5")).to eq ["5 * 5", 25]
       end
     end
   end
