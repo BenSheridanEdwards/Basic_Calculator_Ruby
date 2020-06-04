@@ -27,6 +27,10 @@ describe Calculator do
       it "takes in the um of 9 / 3 and returns the sum with the answer of 3" do
         expect(subject.evaluate("9 / 3")).to eq ["9 / 3", 3]
       end
+
+      it "takes in the um of 90 / 3 and returns the sum with the answer of 30" do
+        expect(subject.evaluate("90 / 3")).to eq ["90 / 3", 30]
+      end
     end
   end
 end
