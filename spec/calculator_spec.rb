@@ -12,5 +12,7 @@ describe Calculator do
         expect(subject.evaluate("10 + 10")).to eq ["10 + 10", 20]
       end
     end
+
+
   end
 end
