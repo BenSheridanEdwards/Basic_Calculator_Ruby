@@ -1,6 +1,8 @@
 class Calculator
 
   def evaluate(sum)
+    raise "ArgumentError: Only integers can be used to evaluate sums" if numbers_are_not_integers_in(sum)
+
     first_number = sum.split.first.to_i
     second_number = sum.split.last.to_i
     operator = sum.split[1]
@@ -37,5 +39,9 @@ class Calculator
 
   def multiply(first_number, second_number)
     first_number * second_number
+  end
+
+  def numbers_are_not_integers_in(sum)
+    !(sum.split.first !~ /\D/) || !(sum.split.last !~ /\D/)
   end
 end

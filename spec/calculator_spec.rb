@@ -51,10 +51,31 @@ describe Calculator do
       end
     end
 
-    context "when the input is invalid" do
-      it "throws an error when an invalid operator is used" do
+    context "when the number input is invalid" do
+      it "throws an error when the first number uses letters instead an integers" do
+        message = "ArgumentError: Only integers can be used to evaluate sums"
+        expect{ subject.evaluate("one + 1") }.to raise_error message
+      end
+
+      it "throws an error when the second number uses letters instead an integers" do
+        message = "ArgumentError: Only integers can be used to evaluate sums"
+        expect{ subject.evaluate("1 + one") }.to raise_error message
+      end
+
+      it "throws an error when both numbers use letters instead an integers" do
+        message = "ArgumentError: Only integers can be used to evaluate sums"
+        expect{ subject.evaluate("one + one") }.to raise_error message
+      end
+
+    context "when the operator input is invalid"
+      it "throws an error when an invalid operator like '=' is used" do
         message = "ArgumentError: Invalid operator ="
         expect{ subject.evaluate("1 = 1") }.to raise_error message
+      end
+
+      it "throws an error when an invalid operator like '%' is used" do
+        message = "ArgumentError: Invalid operator %"
+        expect{ subject.evaluate("1 % 1") }.to raise_error message
       end
     end
   end
