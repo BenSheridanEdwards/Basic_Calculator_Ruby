@@ -14,6 +14,8 @@ class Calculator
       [sum] << divide(first_number, second_number)
     when "*"
       [sum] << multiply(first_number, second_number)
+    when "x"
+      [sum] << multiply(first_number, second_number)
     end
   end
 

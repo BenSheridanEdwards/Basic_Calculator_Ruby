@@ -41,6 +41,10 @@ describe Calculator do
       it "takes in the sum of 25 * 4 and return the sum with the answer 100" do
         expect(subject.evaluate("25 * 4")).to eq ["25 * 4", 100]
       end
+
+      it "takes in the sum of 25 x 4 with a traditional times (x) sign and returns the sum with the answer of 100" do
+        expect(subject.evaluate("25 x 4")).to eq ["25 x 4", 100]
+      end
     end
   end
 end
