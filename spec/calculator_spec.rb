@@ -37,6 +37,10 @@ describe Calculator do
       it "takes in the sum of 5 * 5 and returns the sum with the answer 25" do
         expect(subject.evaluate("5 * 5")).to eq ["5 * 5", 25]
       end
+
+      it "takes in the sum of 25 * 4 and return the sum with the answer 100" do
+        expect(subject.evaluate("25 * 4")).to eq ["25 * 4", 100]
+      end
     end
   end
 end
