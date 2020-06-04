@@ -16,6 +16,8 @@ class Calculator
       [sum] << multiply(first_number, second_number)
     when "x"
       [sum] << multiply(first_number, second_number)
+    else
+      raise "ArgumentError: Invalid operator #{operator}"
     end
   end
 

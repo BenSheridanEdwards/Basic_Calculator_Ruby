@@ -50,5 +50,12 @@ describe Calculator do
         expect(subject.evaluate("25 x 4")).to eq ["25 x 4", 100]
       end
     end
+
+    context "when the input is invalid" do
+      it "throws an error when an invalid operator is used" do
+        message = "ArgumentError: Invalid operator ="
+        expect{ subject.evaluate("1 = 1") }.to raise_error message
+      end
+    end
   end
 end
