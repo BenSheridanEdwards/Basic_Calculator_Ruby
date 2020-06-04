@@ -13,6 +13,10 @@ describe Calculator do
       end
     end
 
-
+    context "when the sum is subtraction" do
+      it "takes in the sum of 5 - 1 and returns the sum with the answer of 4" do
+        expect(subject.evaluate("5 - 1")).to eq ["5 - 1", 4]
+      end
+    end
   end
 end
