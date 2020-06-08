@@ -13,7 +13,7 @@ class Calculator
     when "-"
       [sum] << subtract(first_number, second_number)
     when '/'
-      raise "MathError: Numbers can not be divided by zero" if second_number == 0
+      raise "MathError: Numbers can not be divided by zero" if second_number_is_zero(second_number)
       [sum] << divide(first_number, second_number)
     when "*"
       [sum] << multiply(first_number, second_number)
@@ -44,5 +44,9 @@ class Calculator
 
   def numbers_are_not_integers_in(sum)
     !(sum.split.first !~ /\D/) || !(sum.split.last !~ /\D/)
+  end
+
+  def second_number_is_zero(second_number)
+    second_number == 0
   end
 end
