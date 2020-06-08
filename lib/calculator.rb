@@ -7,8 +7,6 @@ class Calculator
     second_number = sum.split.last.to_i
     operator = sum.split[1]
 
-   
-
     case operator
     when "+"
       [sum] << add(first_number, second_number)
