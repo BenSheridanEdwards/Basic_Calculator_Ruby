@@ -56,3 +56,5 @@ Output = ["25 / 5", 5]
 ![RSpec Tests 1](https://github.com/BenSheridanEdwards/Basic_Calculator_Ruby/blob/master/images/RSpec%20Tests/CalculatorSpec-1.png)
 
 ![RSpec Tests 2](https://github.com/BenSheridanEdwards/Basic_Calculator_Ruby/blob/master/images/RSpec%20Tests/CalculatorSpec-2.png)
+
+![RSpec Tests 3](https://github.com/BenSheridanEdwards/Basic_Calculator_Ruby/blob/master/images/RSpec%20Tests/CalculatorSpec-3.png)
