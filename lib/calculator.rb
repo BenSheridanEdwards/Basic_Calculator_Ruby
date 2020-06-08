@@ -7,6 +7,8 @@ class Calculator
     second_number = sum.split.last.to_i
     operator = sum.split[1]
 
+   
+
     case operator
     when "+"
       [sum] << add(first_number, second_number)
@@ -43,7 +45,8 @@ class Calculator
   end
 
   def numbers_are_not_integers_in(sum)
-    !(sum.split.first !~ /\D/) || !(sum.split.last !~ /\D/)
+    return false if sum.split.first.include?(".") && sum.split.last.include?(".")
+    (sum.split.first =~ /\D/ ) || (sum.split.last =~ /\D/)
   end
 
   def second_number_is_zero(second_number)
