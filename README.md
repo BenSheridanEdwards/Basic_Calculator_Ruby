@@ -43,6 +43,7 @@ Output = ["25 / 5", 5]
 
 - An error is raised when a user tries to input the name of a number rather than the integer, for example "one + one".
 - An error is raised when a user tries to use an invalid operator or one that is not currently supported, for example "1 = 1" or "10 % 2".
+- An error is raised when a user tries to divide by zero.
 
 ## Code
 
