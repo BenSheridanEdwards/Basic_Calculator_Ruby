@@ -12,7 +12,7 @@ describe Calculator do
         expect(subject.evaluate("10 + 10")).to eq ["10 + 10", 20]
       end
 
-      it "takes in a of floats '10.0 + 10.0' and returns the sum with the answer, 20.0" do
+      it "takes in a sum of floats '10.0 + 10.0' and returns the sum with the answer, 20.0" do
         expect(subject.evaluate('10.0 + 10.0')).to eq ['10.0 + 10.0', 20.0]
       end
     end
@@ -24,6 +24,10 @@ describe Calculator do
 
       it "takes in the sum of 50 - 10 and returns the sum with the answer of 40" do
         expect(subject.evaluate("50 - 10")).to eq ["50 - 10", 40]
+      end
+
+      it "takes in the sum of floats '50.0 - 10.0' and returns the sum with the answer of 40.0" do
+        expect(subject.evaluate("50.0 - 10.0")).to eq ["50.0 - 10.0", 40.0]
       end
     end
 
