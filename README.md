@@ -47,8 +47,12 @@ Output = ["25 / 5", 5]
 
 ## Code
 
-![Ruby Code]()
+![Ruby Code 1](https://github.com/BenSheridanEdwards/Basic_Calculator_Ruby/blob/master/images/Ruby%20Code/CalculatorCode-1.png)
+
+![Ruby Code 2](https://github.com/BenSheridanEdwards/Basic_Calculator_Ruby/blob/master/images/Ruby%20Code/CalculatorCode-2.png)
 
 ## Tests
 
-![RSpec Tests]()
+![RSpec Tests 1](https://github.com/BenSheridanEdwards/Basic_Calculator_Ruby/blob/master/images/RSpec%20Tests/CalculatorSpec-1.png)
+
+![RSpec Tests 2](https://github.com/BenSheridanEdwards/Basic_Calculator_Ruby/blob/master/images/RSpec%20Tests/CalculatorSpec-2.png)
