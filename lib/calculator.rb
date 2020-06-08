@@ -13,6 +13,7 @@ class Calculator
     when "-"
       [sum] << subtract(first_number, second_number)
     when '/'
+      raise "MathError: Numbers can not be divided by zero" if second_number == 0
       [sum] << divide(first_number, second_number)
     when "*"
       [sum] << multiply(first_number, second_number)

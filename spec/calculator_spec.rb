@@ -31,6 +31,11 @@ describe Calculator do
       it "takes in the sum of 90 / 3 and returns the sum with the answer of 30" do
         expect(subject.evaluate("90 / 3")).to eq ["90 / 3", 30]
       end
+
+      it "throws an error when the user tries to divide a number by 0" do
+        message = "MathError: Numbers can not be divided by zero"
+        expect{subject.evaluate("1 / 0")}.to raise_error message
+      end
     end
 
     context "when the sum is multiplation" do
